@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Trade Navigator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (max-width: 640px) {
+            .mobile-scroll {
+                display: flex;
+                overflow-x: auto;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+            .mobile-scroll::-webkit-scrollbar {
+                display: none;
+            }
+            .mobile-scroll > div {
+                flex: 0 0 auto;
+                width: 80%;
+                margin-right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center mb-12 text-gray-800">Global Trade Navigator</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-all">
+                <h2 class="text-xl font-semibold mb-4 text-blue-600">Global B2B Platforms</h2>
+                <ul class="space-y-2">
+                    <li><a href="https://www.ec21.com/" target="_blank" class="text-gray-700 hover:text-blue-500">EC21 - Korea</a></li>
+                    <li><a href="https://www.ecvv.com/" target="_blank" class="text-gray-700 hover:text-blue-500">ECVV - China</a></li>
+                    <li><a href="https://www.thomasnet.com/" target="_blank" class="text-gray-700 hover:text-blue-500">Thomas Net - North America</a></li>
+                    <li><a href="https://www.tradekey.com/" target="_blank" class="text-gray-700 hover:text-blue-500">TradeKey - Middle East</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-all">
+                <h2 class="text-xl font-semibold mb-4 text-green-600">Industry-Specific Platforms</h2>
+                <ul class="space-y-2">
+                    <li><a href="https://www.beautetrade.com/" target="_blank" class="text-gray-700 hover:text-green-500">BeauteTrade - Beauty & Cosmetics</a></li>
+                    <li><a href="https://www.fibre2fashion.com/" target="_blank" class="text-gray-700 hover:text-green-500">Fibre2Fashion - Textiles</a></li>
+                    <li><a href="https://www.directindustry.com/" target="_blank" class="text-gray-700 hover:text-green-500">DirectIndustry - Industrial Equipment</a></li>
+                    <li><a href="https://www.industrystock.com/" target="_blank" class="text-gray-700 hover:text-green-500">IndustryStock - Industrial Supplies</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-all">
+                <h2 class="text-xl font-semibold mb-4 text-purple-600">Local Business Directories</h2>
+                <ul class="space-y-2">
+                    <li><a href="https://www.europages.co.uk/" target="_blank" class="text-gray-700 hover:text-purple-500">Europages - Europe</a></li>
+                    <li><a href="https://www.bbb.org" target="_blank" class="text-gray-700 hover:text-purple-500">BBB - USA</a></li>
+                    <li><a href="https://www.paginasamarillas.com" target="_blank" class="text-gray-700 hover:text-purple-500">Paginas Amarillas - Latin America</a></li>
+                    <li><a href="https://www.trade.gov" target="_blank" class="text-gray-700 hover:text-purple-500">US Department of Commerce</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-all">
+                <h2 class="text-xl font-semibold mb-4 text-red-600">European Directories</h2>
+                <ul class="space-y-2">
+                    <li><a href="https://www.hitta.se" target="_blank" class="text-gray-700 hover:text-red-500">Hitta - Sweden</a></li>
+                    <li><a href="https://www.degulesider.dk" target="_blank" class="text-gray-700 hover:text-red-500">Degulesider - Denmark</a></li>
+                    <li><a href="https://www.finder.fi" target="_blank" class="text-gray-700 hover:text-red-500">Finder - Finland</a></li>
+                    <li><a href="https://www.wlw.de" target="_blank" class="text-gray-700 hover:text-red-500">WLW - Germany</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-all">
+                <h2 class="text-xl font-semibold mb-4 text-orange-600">WhatsApp Contact Directories</h2>
+                <ul class="space-y-2">
+                    <li><a href="https://www.yellowpages.ae/" target="_blank" class="text-gray-700 hover:text-orange-500">UAE Yellow Pages</a></li>
+                    <li><a href="https://yellowpages.com.eg/en/" target="_blank" class="text-gray-700 hover:text-orange-500">Egypt Yellow Pages</a></li>
+                    <li><a href="https://www.atninfo.com/" target="_blank" class="text-gray-700 hover:text-orange-500">UAE Client Resources</a></li>
+                    <li><a href="https://www.indonetwork.co.id/" target="_blank" class="text-gray-700 hover:text-orange-500">Indonesia Business Network</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-all">
+                <h2 class="text-xl font-semibold mb-4 text-teal-600">Other Regional Directories</h2>
+                <ul class="space-y-2">
+                    <li><a href="https://www.businesslist.my" target="_blank" class="text-gray-700 hover:text-teal-500">Malaysia Business List</a></li>
+                    <li><a href="https://www.panoramafirm.pl" target="_blank" class="text-gray-700 hover:text-teal-500">Poland Company Directory</a></li>
+                    <li><a href="https://www.firmy.cz" target="_blank" class="text-gray-700 hover:text-teal-500">Czech Business Directory</a></li>
+                    <li><a href="https://www.applegate.co.uk/" target="_blank" class="text-gray-700 hover:text-teal-500">UK Industrial Platform</a></li>
+                </ul>
+            </div>
+
+            <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-all col-span-full">
+                <h2 class="text-xl font-semibold mb-4 text-indigo-600">Payment Platforms for Global Trade</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <h3 class="font-bold mb-2">PayPal</h3>
+                        <p class="text-sm text-gray-600">Global payment giant with 200M+ users</p>
+                        <a href="https://www.paypal.com" target="_blank" class="text-blue-500 hover:underline">Visit Site</a>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">Payoneer</h3>
+                        <p class="text-sm text-gray-600">Cross-border platform payments</p>
+                        <a href="https://www.payoneer.com" target="_blank" class="text-blue-500 hover:underline">Visit Site</a>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">WorldFirst</h3>
+                        <p class="text-sm text-gray-600">International remittance services</p>
+                        <a href="https://www.worldfirst.com" target="_blank" class="text-blue-500 hover:underline">Visit Site</a>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">PingPong</h3>
+                        <p class="text-sm text-gray-600">Cross-border payment for exporters</p>
+                        <a href="https://www.pingpongx.com" target="_blank" class="text-blue-500 hover:underline">Visit Site</a>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">XTransfer</h3>
+                        <p class="text-sm text-gray-600">Optimized for foreign trade</p>
+                        <a href="https://www.xtransfer.com" target="_blank" class="text-blue-500 hover:underline">Visit Site</a>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-2">LianLianPay</h3>
+                        <p class="text-sm text-gray-600">Multi-currency cross-border payments</p>
+                        <a href="https://www.lianlianpay.com" target="_blank" class="text-blue-500 hover:underline">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 text-center text-gray-500 text-sm">
+            <p>Data Source: Global Trade Website Navigation Resources</p>
+            <p>Last Updated: March 2024</p>
+        </div>
+    </div>
+</body>
+</html>
